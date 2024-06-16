@@ -52,6 +52,21 @@ export default function Header() {
                         <img src="/assets/chevron-right.svg" alt="Chevron right" />
                     </span>
                 </div>
+                <div>
+                    <h2>AI for teams building <span className="block">what's next.</span></h2>
+                    <p>Scout gives you the tools to build custom agents and <span>workflows in record time.</span></p>
+                </div>
+                <div>
+                    <button className="signup-btn flex items-center">
+                        Get Started
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                            <path d="M9.43433 14.2249L13.0344 10.6249L9.43433 7.0249" stroke="#09090A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <img src="/assets/hero/apps-dark.75a53e10.svg" alt="Hero Image" />
+                </div>
             </div>
 
         </div>
