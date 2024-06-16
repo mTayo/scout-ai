@@ -52,7 +52,17 @@ body {
   padding: 7.5px 16px 7.5px 17px;
 
 }
-
+.hero-heading{
+  background: linear-gradient(180deg, #FFF 0%, #BABABA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 62.72px; /* 98% */
+  letter-spacing: -3.686px;
+}
 
 
 .stars {

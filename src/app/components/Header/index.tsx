@@ -35,8 +35,8 @@ export default function Header() {
                     </nav>
                 </div>
             </div>
-            <div className="hero-section">
-                <div className="flex items-center">
+            <div className="hero-section text-center flex justify-center flex-col">
+                <div className="flex items-center justify-center mt-[92px]">
                     <Image
                         src="/assets/hero/hero_btn_icon.svg"
                         alt="Scout AI UI"
@@ -52,11 +52,11 @@ export default function Header() {
                         <img src="/assets/chevron-right.svg" alt="Chevron right" />
                     </span>
                 </div>
-                <div>
-                    <h2>AI for teams building <span className="block">what's next.</span></h2>
-                    <p>Scout gives you the tools to build custom agents and <span>workflows in record time.</span></p>
+                <div className="mt-6">
+                    <h2 className="hero-heading">AI for teams building <span className="block">what's next.</span></h2>
+                    <p className="mt-8">Scout gives you the tools to build custom agents and <span>workflows in record time.</span></p>
                 </div>
-                <div>
+                <div className="flex items-center justify-center mt-10">
                     <button className="signup-btn flex items-center">
                         Get Started
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
@@ -64,7 +64,7 @@ export default function Header() {
                         </svg>
                     </button>
                 </div>
-                <div>
+                <div className="mt-24">
                     <img src="/assets/hero/apps-dark.75a53e10.svg" alt="Hero Image" />
                 </div>
             </div>
