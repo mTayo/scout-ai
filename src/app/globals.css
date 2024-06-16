@@ -26,7 +26,8 @@ body {
 
 }
 .content-max-width{
-  max-width: 1188.44px;
+  /* max-width: 1188.44px; */
+  max-width: 1000px;
 }
 .header-border{
   border-bottom: 1px solid hsla(0, 0%, 100%, .06);
@@ -62,7 +63,7 @@ body {
   font-size: 64px;
   font-style: normal;
   font-weight: 500;
-  line-height: 62.72px; /* 98% */
+  /* line-height: 62.72px; 98% */
   letter-spacing: -3.686px;
 }
 .hero-paragraph{
@@ -109,6 +110,8 @@ body {
   -moz-animation: animStar 600s linear infinite;
   -ms-animation: animStar 600s linear infinite;
   animation: animStar 600s linear infinite; */
+  /* color: transparent; */
+  mix-blend-mode: overlay;
 }
 .nav-text{
   
