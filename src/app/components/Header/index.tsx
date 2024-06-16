@@ -36,7 +36,7 @@ export default function Header() {
                 </div>
             </div>
             <div className="hero-section text-center flex justify-center flex-col">
-                <div className="flex items-center justify-center mt-[92px]">
+                <div className="flex items-center justify-center mt-[92px] hero-beta py-2 max-w-[236.83px] mx-auto w-full">
                     <Image
                         src="/assets/hero/hero_btn_icon.svg"
                         alt="Scout AI UI"
@@ -47,14 +47,14 @@ export default function Header() {
                         // height={24}
                         priority
                     />
-                    <span>is currently in beta</span>
+                    <span className="warm-grey text-sm">is currently in beta</span>
                     <span>
                         <img src="/assets/chevron-right.svg" alt="Chevron right" />
                     </span>
                 </div>
                 <div className="mt-6">
                     <h2 className="hero-heading">AI for teams building <span className="block">what's next.</span></h2>
-                    <p className="mt-8">Scout gives you the tools to build custom agents and <span>workflows in record time.</span></p>
+                    <p className="mt-8 hero-paragraph text-lg">Scout gives you the tools to build custom agents and <span className="block">workflows in record time.</span></p>
                 </div>
                 <div className="flex items-center justify-center mt-10">
                     <button className="signup-btn flex items-center">

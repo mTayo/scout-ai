@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --warm-grey: rgba(255, 255, 255, 0.48);
+
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -62,6 +64,21 @@ body {
   font-weight: 500;
   line-height: 62.72px; /* 98% */
   letter-spacing: -3.686px;
+}
+.hero-paragraph{
+  color: rgba(255, 255, 255, 0.50);
+  font-style: normal;
+  line-height: 26px; /* 130% */
+}
+
+.hero-beta{
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.04);
+}
+.warm-grey{
+  color: var(--warm-grey);
+
+
 }
 
 
