@@ -80,8 +80,25 @@ body {
 
 
 }
+.header-container::before{
+  content: url("/assets/hero/green-shape.svg");
+  position: absolute;
+  right: 38%;
+  color: transparent;
+  mix-blend-mode: overlay;
+}
 
+.header-container::after{
+  /* content:  ; */
+  content: url("/assets/hero/red_shape.svg");
+  position: absolute;
+  top: 0%;
+  /* right: 8%; */
+  right: 10%;
+  color: transparent;
+  mix-blend-mode: overlay;
 
+}
 .stars {
   width: 1px;
   height: 1px;

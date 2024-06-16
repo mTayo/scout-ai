@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-        <div>
+        <div className="header-container relative">
             <div className="header-border">
                 <div className="content-max-width mx-auto ">
                     <nav className="flex justify-between px-2 pt-[26px] pb-[21px]">
