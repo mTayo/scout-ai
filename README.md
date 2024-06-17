@@ -1,5 +1,7 @@
 Check [the website (It's a work in progress though)](https://scout-ai-delta.vercel.app/) 
 
+This website is made with Tailwind CSS and Next JS
+
 ## Getting Started
 
 First, run the development server:
