@@ -1,4 +1,4 @@
-Check [the website (It's a work in progress though)](https://scout-ai-delta.vercel.app/) 
+Check [the website (It's a work in progress though 😉 )](https://scout-ai-delta.vercel.app/) 
 
 This website is was with Tailwind CSS and Next JS
 

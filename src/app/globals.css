@@ -49,6 +49,9 @@ body {
 .header-border{
   border-bottom: 1px solid hsla(0, 0%, 100%, .06);
 }
+.vertical-border-top{
+  border-top: 1px solid hsla(0, 0%, 100%, .06);
+}
 .hero-section::after{
   content: url("/assets/hero/big_star.svg");
   position: absolute;
