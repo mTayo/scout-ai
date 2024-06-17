@@ -38,7 +38,7 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div className="hero-section relative text-center ">
+            <div className="hero-section relative text-center content-max-width mx-auto overflow-x-hidden">
                 <div className="content-border relative flex justify-center flex-col">
                     <div className="flex items-center justify-center mt-[92px] hero-beta py-2 max-w-[236.83px] mx-auto w-full">
                         <Image
