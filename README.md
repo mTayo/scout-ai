@@ -1,6 +1,6 @@
 Check [the website (It's a work in progress though)](https://scout-ai-delta.vercel.app/) 
 
-This website is made with Tailwind CSS and Next JS
+This website is was with Tailwind CSS and Next JS
 
 ## Getting Started
 
