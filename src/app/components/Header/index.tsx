@@ -6,67 +6,71 @@ export default function Header() {
         <div className="header-container relative">
             <div className="header-border">
                 <div className="content-max-width mx-auto ">
-                    <nav className="flex justify-between px-2 pt-[26px] pb-[21px]">
-                        <div className="flex gap-x-6 items-center">
-                            <div>
-                                <Image
-                                    src="/assets/hero/hero_logo_icon.svg"
-                                    alt="Scout AI UI"
-                                    // className="dark:invert"
-                                    width={100}
-                                    height={24}
-                                    priority
-                                />
+                    <div className="content-border relative">
+                        <nav className="flex justify-between px-2 pt-[26px] pb-[21px]">
+                            <div className="flex gap-x-6 items-center">
+                                <div>
+                                    <Image
+                                        src="/assets/hero/hero_logo_icon.svg"
+                                        alt="Scout AI UI"
+                                        // className="dark:invert"
+                                        width={100}
+                                        height={24}
+                                        priority
+                                    />
+                                </div>
+                                <ul className="flex gap-x-6 text-[#CBD5E1] text-[15px]">
+                                    <li className="p-1 pr-[16.82px] text-slate-300">Features</li>
+                                    <li className="p-1 pr-[22.22px] text-slate-300">Pricing</li>
+                                    <li className="p-1 pr-[5.41px] text-slate-300">Docs</li>
+                                    <li className="p-1 pr-[9.41px] text-slate-300">Blog</li>
+                                </ul>
                             </div>
-                            <ul className="flex gap-x-6 text-[#CBD5E1] text-[15px]">
-                                <li className="p-1 pr-[16.82px] text-slate-300">Features</li>
-                                <li className="p-1 pr-[22.22px] text-slate-300">Pricing</li>
-                                <li className="p-1 pr-[5.41px] text-slate-300">Docs</li>
-                                <li className="p-1 pr-[9.41px] text-slate-300">Blog</li>
-                            </ul>
-                        </div>
-                        <div className="flex  text-[15px] gap-x-[15.828px] items-center">
-                            <button className="login-btn text-white">
-                                Login
-                            </button>
-                            <button className="signup-btn">
-                                Sign Up
-                            </button>
-                        </div>
-                    </nav>
+                            <div className="flex  text-[15px] gap-x-[15.828px] items-center">
+                                <button className="login-btn text-white">
+                                    Login
+                                </button>
+                                <button className="signup-btn">
+                                    Sign Up
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
-            <div className="hero-section relative text-center flex justify-center flex-col">
-                <div className="flex items-center justify-center mt-[92px] hero-beta py-2 max-w-[236.83px] mx-auto w-full">
-                    <Image
-                        src="/assets/hero/hero_btn_icon.svg"
-                        alt="Scout AI UI"
-                        width={57.19}
-                        height={12}
-                        // className="dark:invert"
-                        // width={100}
-                        // height={24}
-                        priority
-                    />
-                    <span className="warm-grey text-sm">is currently in beta</span>
-                    <span>
-                        <img src="/assets/chevron-right.svg" alt="Chevron right" />
-                    </span>
-                </div>
-                <div className="mt-6">
-                    <h2 className="hero-heading leading-[5.5rem]">AI for teams building <span className="block">what's next.</span></h2>
-                    <p className="mt-8 hero-paragraph text-lg">Scout gives you the tools to build custom agents and <span className="block">workflows in record time.</span></p>
-                </div>
-                <div className="flex items-center justify-center mt-10">
-                    <button className="signup-btn flex items-center">
-                        Get Started
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                            <path d="M9.43433 14.2249L13.0344 10.6249L9.43433 7.0249" stroke="#09090A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </div>
-                <div className="mt-24 content-max-width mx-auto">
-                    <img src="/assets/hero/apps-dark.75a53e10.svg" alt="Hero Image" />
+            <div className="hero-section relative text-center ">
+                <div className="content-border relative flex justify-center flex-col">
+                    <div className="flex items-center justify-center mt-[92px] hero-beta py-2 max-w-[236.83px] mx-auto w-full">
+                        <Image
+                            src="/assets/hero/hero_btn_icon.svg"
+                            alt="Scout AI UI"
+                            width={57.19}
+                            height={12}
+                            // className="dark:invert"
+                            // width={100}
+                            // height={24}
+                            priority
+                        />
+                        <span className="warm-grey text-sm">is currently in beta</span>
+                        <span>
+                            <img src="/assets/chevron-right.svg" alt="Chevron right" />
+                        </span>
+                    </div>
+                    <div className="mt-6">
+                        <h2 className="hero-heading leading-[5.5rem]">AI for teams building <span className="block">what's next.</span></h2>
+                        <p className="mt-8 hero-paragraph text-lg">Scout gives you the tools to build custom agents and <span className="block">workflows in record time.</span></p>
+                    </div>
+                    <div className="flex items-center justify-center mt-10">
+                        <button className="signup-btn flex items-center">
+                            Get Started
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                <path d="M9.43433 14.2249L13.0344 10.6249L9.43433 7.0249" stroke="#09090A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div className="mt-24 content-max-width mx-auto">
+                        <img src="/assets/hero/apps-dark.75a53e10.svg" alt="Hero Image" />
+                    </div>
                 </div>
             </div>
 
