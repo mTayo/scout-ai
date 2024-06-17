@@ -32,6 +32,13 @@ body {
 .header-border{
   border-bottom: 1px solid hsla(0, 0%, 100%, .06);
 }
+.hero-section::after{
+  content: url("/assets/hero/big_star.svg");
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
 
 @layer utilities {
   .text-balance {

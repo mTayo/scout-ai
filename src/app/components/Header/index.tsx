@@ -36,7 +36,7 @@ export default function Header() {
                     </nav>
                 </div>
             </div>
-            <div className="hero-section text-center flex justify-center flex-col">
+            <div className="hero-section relative text-center flex justify-center flex-col">
                 <div className="flex items-center justify-center mt-[92px] hero-beta py-2 max-w-[236.83px] mx-auto w-full">
                     <Image
                         src="/assets/hero/hero_btn_icon.svg"
