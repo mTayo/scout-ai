@@ -49,8 +49,19 @@ body {
 .header-border{
   border-bottom: 1px solid hsla(0, 0%, 100%, .06);
 }
-.vertical-border-top{
+.vertical-border-left{
+  border-left: 1px solid hsla(0, 0%, 100%, .06);
+}
+.vertical-border-right{
+  border-right: 1px solid hsla(0, 0%, 100%, .06);
+}
+.horizontal-border-top{
   border-top: 1px solid hsla(0, 0%, 100%, .06);
+}
+
+.horizontal-border{
+  border-top: 1px solid hsla(0, 0%, 100%, .06);
+  border-bottom: 1px solid hsla(0, 0%, 100%, .06);
 }
 .hero-section::after{
   content: url("/assets/hero/big_star.svg");

@@ -73,10 +73,10 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="vertical-border-top">
+                <div className="horizontal-border">
                 <div className="container-max-width mx-auto relative">
                     <div className=" content-max-width mx-auto overflow-x-hidden">
-                    <div className="content-border ">
+                    <div className="content-border">
                         <img src="/assets/hero/apps-dark.75a53e10.svg" alt="Hero Image" />
                     </div>
                     </div>
