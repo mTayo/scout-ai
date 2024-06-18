@@ -66,6 +66,7 @@ const TiltCard = ({children}: any) => {
                 style={{
                     transform: "translateZ(50px)",
                 }}
+                className="pointer"
             >
                 {children}
             </div>

@@ -11,13 +11,20 @@ export default function SubPlan() {
                         <h2 className="text-white text-4xl font-bold">A plan for every need.</h2>
                         <p className="paragraph-color mt-4 text-lg font-normal">Whether you are just starting or require massive scale, we have a solution.</p>
                     </div>
-                    <div className="mt-10 flex gap-x-4">
+                    <div className="mt-10 mb-5 flex gap-x-6 justify-center">
                         {cardData.map((card: any, _i: number) => (
-                            <div key={_i} className="max-w-[303px] w-full">
-                                <PlanCard  cardDetails={card} />
-                            </div>
+                            <PlanCard key={_i} cardDetails={card} />
                         ))}
                         
+                    </div>
+                    {/* DEDICATED SUPPORT */}
+                    <div className="dedicated-support-container max-w-[960px] mx-auto flex mb-[142px]">
+                        <div className="dedicated-support flex-grow">
+
+                        </div>
+                        <div className="max-w-[307px]">
+
+                        </div>
                     </div>
                 </Section>
                 <Section useContentBorder={false} />
