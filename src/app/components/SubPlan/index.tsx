@@ -1,9 +1,11 @@
+/* eslint-disable react/no-unescaped-entities */
 import PlanCard from "../common/PlanCard";
 import Section from "../common/Section";
 import TiltCard from "../common/TiltingCard";
 
 
 export default function SubPlan() {
+    const includedFeatures: Array<string> = ['Shared Slack Channel','Dedicated Support Engineer', 'Prompt Engineering Guidance', 'Context Sourcing Guidance'];
     return (
             <div>
                 <Section contentClass="" useContentBorder={false} useTopHorizontalBorder={false}>
@@ -18,11 +20,25 @@ export default function SubPlan() {
                         
                     </div>
                     {/* DEDICATED SUPPORT */}
-                    <div className="dedicated-support-container max-w-[960px] mx-auto flex mb-[142px]">
-                        <div className="dedicated-support flex-grow">
-
+                    <div className="dedicated-support-container pl-[14px] py-2.5 max-w-[960px] mx-auto flex mb-[142px]">
+                        <div className="dedicated-support py-6 pl-5 flex-grow font-normal">
+                            <h2 className="text-2xl text-white">Dedicated Support</h2>
+                            <p className="text-white opacity-50 mt-3.5 ">We are here to help get you started with a dedicated support engineer who can assist with 
+                                scoping your first models and getting them deployed.
+                            </p>
+                            <h3 className="mt-5 text-white opacity-50 font-medium text-[13px]">WHAT'S INCLUDED</h3>
+                            <div className="flex flex-wrap">
+                                {includedFeatures.map((item:string, _i:number) => (
+                                    <div key={_i} className="flex items-center gap-x-4 pr-[80px]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                            <path d="M15.5 10.0928L11 15.3309L9 13.4261M21.5 12.4738C21.5 17.2076 17.4705 21.0452 12.5 21.0452C7.52943 21.0452 3.5 17.2076 3.5 12.4738C3.5 7.73991 7.52943 3.90234 12.5 3.90234C17.4705 3.90234 21.5 7.73991 21.5 12.4738Z" stroke="#434343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p className="text-white opacity-50 max-w-[160px]">{item}</p>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
-                        <div className="max-w-[307px]">
+                        <div className="max-w-[307px] w-full">
 
                         </div>
                     </div>
