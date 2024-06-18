@@ -12,7 +12,7 @@ const Button = (props: any): JSX.Element => {
                 <button
                     type="button"
                     onClick={action}
-                    className={` ${className} ${disabled ? 'button-disabled' : ''} ${isLoading ? 'not-allowed' : ''}`}
+                    className={` pointer ${className} ${disabled ? 'button-disabled' : ''} ${isLoading ? 'not-allowed' : ''}`}
                     disabled={disabled}
                     {...rest}
                 >
@@ -22,7 +22,7 @@ const Button = (props: any): JSX.Element => {
                 <button
                     type="button"
                     onClick={action}
-                    className={`app-icon-button ${className} ${disabled ? 'button-disabled' : ''} ${isLoading ? 'not-allowed' : ''}`}
+                    className={`pointer app-icon-button ${className} ${disabled ? 'button-disabled' : ''} ${isLoading ? 'not-allowed' : ''}`}
                     disabled={disabled}
                     {...rest}
                 >

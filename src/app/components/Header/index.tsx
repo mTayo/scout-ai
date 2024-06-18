@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import Button from "../common/Button";
-// background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, #1F1F1F 10%);
 export default function Header() {
   return (
         <div className="header-container relative">

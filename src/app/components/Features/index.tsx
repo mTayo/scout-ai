@@ -1,5 +1,5 @@
-import Section from "../Section";
-import TiltCard from "../TiltingCard";
+import Section from "../common/Section";
+import TiltCard from "../common/TiltingCard";
 
 
 export default function Features() {
@@ -32,7 +32,7 @@ export default function Features() {
                         </TiltCard>
                     </div>
                 </Section>
-                <Section />
+                <Section useContentBorder={false} />
                 
             </>
     );

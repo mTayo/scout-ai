@@ -19,61 +19,34 @@ body {
 }
 .container-max-width{
   position: relative;
-  max-width: 1200.44px;
+  max-width: 1220.44px;
+}
 
+.container-max-width::after{
+  content: " ";
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 1px;
+  right: 0%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, #1F1F1F 10%);
+}
+
+.container-max-width::before{
+  content: " ";
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 1px;
+  left: 0%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, #1F1F1F 10%);
 }
 
 .content-max-width{
   position: relative;
-  /* max-width: 1188.44px; */
   max-width: 1000px;
 }
-/* .content-max-width::before{
-  content: " ";
-  position: absolute;
-  top: 0px;
-  right: -100px;
-  height: 100%;
-  width: 1px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, #1F1F1F 10%);
-}
-.content-max-width::after{
-  content: " ";
-  position: absolute;
-  top: 0px;
-  left: -100px;
-  height: 100%;
-  width: 1px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, #1F1F1F 10%);
-} */
-button{
-  cursor: pointer;
-  /* z-index: 200; */
-}
-.header-border{
-  border-bottom: 1px solid hsla(0, 0%, 100%, .06);
-}
-.vertical-border-left{
-  border-left: 1px solid hsla(0, 0%, 100%, .06);
-}
-.vertical-border-right{
-  border-right: 1px solid hsla(0, 0%, 100%, .06);
-}
-.horizontal-border-top{
-  border-top: 1px solid hsla(0, 0%, 100%, .06);
-}
 
-.horizontal-border{
-  border-top: 1px solid hsla(0, 0%, 100%, .06);
-  border-bottom: 1px solid hsla(0, 0%, 100%, .06);
-}
-.hero-section::after{
-  content: url("/assets/hero/big_star.svg");
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
 .content-border::before{
   content: " ";
   position: absolute;
@@ -92,25 +65,35 @@ button{
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, #1F1F1F 60%);
 }
 
-.container-max-width::after{
-  content: " ";
-  position: absolute;
-  top: 0px;
-  height: 100%;
-  width: 1px;
-  right: -1%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, #1F1F1F 10%);
+
+.pointer{
+  cursor: pointer;
 }
-
-
-.container-max-width::before{
-  content: " ";
+.header-border{
+  border-bottom: 1px solid hsla(0, 0%, 100%, .06);
+}
+.vertical-border-left{
+  border-left: 1px solid hsla(0, 0%, 100%, .06);
+}
+.vertical-border-right{
+  border-right: 1px solid hsla(0, 0%, 100%, .06);
+}
+.horizontal-border-top{
+  border-top: 1px solid hsla(0, 0%, 100%, .06);
+}
+.horizontal-border-bottom{
+  border-bottom: 1px solid hsla(0, 0%, 100%, .06);
+}
+.horizontal-border{
+  border-top: 1px solid hsla(0, 0%, 100%, .06);
+  border-bottom: 1px solid hsla(0, 0%, 100%, .06);
+}
+.hero-section::after{
+  content: url("/assets/hero/big_star.svg");
   position: absolute;
-  top: 0px;
-  height: 100%;
-  width: 1px;
-  left: -1%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, #1F1F1F 10%);
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 @layer utilities {

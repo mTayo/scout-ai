@@ -1,4 +1,4 @@
-import Section from "../Section";
+import Section from "../common/Section";
 
 
 export default function Customers() {
@@ -8,7 +8,7 @@ export default function Customers() {
     }
     return (
             <>
-                <Section />
+                <Section useContentBorder={false} />
                 <Section contentClass="">
                     <div className="mx-[120px]  vertical-border-right flex justify-between items-center">
                         {customerData.first_row.map((item, i) => (
