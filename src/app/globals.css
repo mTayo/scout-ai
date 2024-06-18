@@ -139,6 +139,9 @@ body {
   border-radius: 40px;
   background: rgba(255, 255, 255, 0.04);
 }
+.light-grey-bg{
+  background: rgba(255, 255, 255, 0.04);
+}
 .warm-grey{
   color: var(--warm-grey);
 
