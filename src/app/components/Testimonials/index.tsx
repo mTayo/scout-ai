@@ -42,7 +42,7 @@ export default function Testimonials() {
                         </div>
                         <div className="text-white flex-grow vertical-border-left vertical-border-right">
                             <div className="max-w-[470px] mx-auto w-full py-[27.97px]">
-                                <p className="text-center text-3xl mt-6">{testimonialsArray[currentId].text}</p>
+                                <p className="text-center text-3xl mt-6 font-normal">{testimonialsArray[currentId].text}</p>
                                 <div className="flex justify-center mt-10">
                                     <TiltCard>
                                         <img src={testimonialsArray[currentId].avatar} alt="testimonial image" className="h-20 w-20 object-cover rounded-full  ring-white" />
@@ -64,6 +64,7 @@ export default function Testimonials() {
                         </div>
                     </div>
                 </Section>
+                <Section useContentBorder={false} useTopHorizontalBorder={false} />
             </>
     );
 }

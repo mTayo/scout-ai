@@ -1,13 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@font-face {
+  font-family: "helvetica_neu_bold";
+  src: url('/assets/fonts/helveticaneue/Helvetica-Neu-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+  
+@font-face {
+  font-family: "helvetica_neu_medium";
+  src: url('/assets/fonts/helveticaneue/HelveticaNeue-01.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "helvetica_neu_normal";
+  src: url('/assets/fonts/helveticaneue/HelveticaNeue.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.font-normal{
+  font-family: "helvetica_neu_normal";
+}
+.font-medium{
+  font-family: "helvetica_neu_medium";
+}
+.font-bold{
+  font-family: "helvetica_neu_bold";
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --warm-grey: rgba(255, 255, 255, 0.48);
-
 }
 
 body {
@@ -137,6 +163,9 @@ body {
   font-style: normal;
   line-height: 26px; /* 130% */
 }
+.paragraph-color{
+  color:#828386;
+}
 
 .hero-beta{
   border-radius: 40px;
@@ -191,4 +220,31 @@ body {
   height: 100%;
   width: 100%;
   mix-blend-mode: overlay;
+}
+
+/* Plan card */
+.plan-card{
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.30);
+}
+.plan-card-hobby{
+  background: radial-gradient(70.71% 70.71% at 50% 50%, rgba(12, 207, 113, 0.10) 0%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(70.71% 70.71% at 50% 50%, rgba(27, 27, 27, 0.00) 0%, rgba(27, 27, 27, 0.00) 49.48%);
+}
+.plan-card-pro{
+  background: radial-gradient(70.71% 70.71% at 50% 50%, rgba(195, 140, 245, 0.20) 0%, rgba(26, 26, 26, 0.20) 100%), radial-gradient(70.71% 70.71% at 50% 50%, rgba(27, 27, 27, 0.00) 0%, #1B1B1B 49.48%);
+}
+.plan-card-enterprise{
+  background: radial-gradient(70.71% 70.71% at 50% 50%, rgba(92, 124, 230, 0.10) 0%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(70.71% 70.71% at 50% 50%, rgba(27, 27, 27, 0.00) 0%, rgba(27, 27, 27, 0.00) 49.48%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.30);
+}
+.normal-plan-btn{
+  border-radius: 26px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(222, 222, 222, 0.08) 100%);
+}
+.pro-plan-btn{
+  border-radius: 26px;
+  border: 1px solid #FFF;
+  background: linear-gradient(180deg, #FFF 0%, #FFF 100%), #F3F2FF;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
 }
