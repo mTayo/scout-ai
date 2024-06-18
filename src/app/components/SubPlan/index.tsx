@@ -2,11 +2,9 @@ import Section from "../common/Section";
 import TiltCard from "../common/TiltingCard";
 
 
-export default function Features() {
-    
+export default function SubPlan() {
     return (
             <>
-          
                 <Section contentClass="" useContentBorder={false} useTopHorizontalBorder={false}>
                     <div className="features-section-container relative">
                         <div className="pt-[121px] flex justify-between items-center">
@@ -33,8 +31,7 @@ export default function Features() {
                         </div>
                     </div>
                 </Section>
-                <Section useContentBorder={false} useTopHorizontalBorder={false} />
-                
+                <Section useContentBorder={false} />
             </>
     );
 }

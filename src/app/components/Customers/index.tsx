@@ -8,8 +8,8 @@ export default function Customers() {
     }
     return (
             <>
-                <Section useContentBorder={false} />
-                <Section contentClass="">
+                <Section useContentBorder={false} useTopHorizontalBorder={false}/>
+                <Section contentClass="" useTopHorizontalBorder={false}>
                     <div className="mx-[120px]  vertical-border-right flex justify-between items-center">
                         {customerData.first_row.map((item, i) => (
                             <div className={`py-10 px-12 ${i  < customerData.first_row.length? 'vertical-border-left' : ''}`} key={i}>
@@ -18,10 +18,10 @@ export default function Customers() {
                         ))}
                     </div>
                 </Section>
-                <Section contentClass="py-[65px]" useContentBorder={false}>
+                <Section contentClass="py-[65px]" useContentBorder={false} useTopHorizontalBorder={false}>
                     <h2 className="text-white text-4xl text-center leading-[3.4rem] font-medium">Used by teams at Statsig, Deno, <span className="block">Dagster, Evidence and more.</span></h2>
                 </Section>
-                <Section contentClass="">
+                <Section contentClass="" useTopHorizontalBorder={false}>
                     <div className="mx-[120px]   vertical-border-right flex justify-between items-center">
                         {customerData.second_row.map((item, i) => (
                             <div className={`py-10 px-12 ${i  < customerData.first_row.length? 'vertical-border-left' : ''}`} key={i}>

@@ -88,6 +88,9 @@ body {
   border-top: 1px solid hsla(0, 0%, 100%, .06);
   border-bottom: 1px solid hsla(0, 0%, 100%, .06);
 }
+.horizontal-border-top-zero{
+  border-top: 0px;
+}
 .hero-section::after{
   content: url("/assets/hero/big_star.svg");
   position: absolute;
@@ -179,8 +182,13 @@ body {
 }
 
 /* Features */
+.features-section-container{
+  overflow-y: hidden;
+}
 .features-section-container::before{
   content: url("/assets/testimonial_logo/bg-bento.svg");
   position: absolute;
+  height: 100%;
+  width: 100%;
   mix-blend-mode: overlay;
 }
