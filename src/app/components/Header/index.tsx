@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
+import Button from "../common/Button";
 // background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, #1F1F1F 10%);
 export default function Header() {
   return (
@@ -28,12 +29,8 @@ export default function Header() {
                                     </ul>
                                 </div>
                                 <div className="flex  text-[15px] gap-x-[15.828px] items-center">
-                                    <button className="login-btn text-white">
-                                        Login
-                                    </button>
-                                    <button className="signup-btn">
-                                        Sign Up
-                                    </button>
+                                    <Button  className="login-btn text-white" text="Login"  animateClass="z-10" />
+                                    <Button  className="signup-btn" text="Sign Up" animateClass="z-10" />
                                 </div>
                             </nav>
                         </div>
@@ -62,12 +59,16 @@ export default function Header() {
                                 <p className="mt-8 hero-paragraph text-lg">Scout gives you the tools to build custom agents and <span className="block">workflows in record time.</span></p>
                             </div>
                             <div className="flex items-center justify-center mt-10">
-                                <button className="signup-btn flex items-center">
-                                    Get Started
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                <Button 
+                                    className="signup-btn flex items-center " 
+                                    text="Get Started" 
+                                    icon={
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
                                         <path d="M9.43433 14.2249L13.0344 10.6249L9.43433 7.0249" stroke="#09090A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                </button>
+                                    } 
+                                    animateClass="z-10"
+                                />
                             </div>
                             
                         </div>

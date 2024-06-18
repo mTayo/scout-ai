@@ -20,7 +20,7 @@ export default function Features() {
                             <img src="/assets/feature-cards/card_3.svg" alt="Feature card"/>
                         </TiltCard>
                     </div>
-                    <div className="mt-[-10px] flex justify-between items-center">
+                    <div className="mt-[-10px] pb-[121px] flex justify-between items-center">
                         <TiltCard>
                             <img src="/assets/feature-cards/card_4.svg" alt="Feature card"/>
                         </TiltCard>
@@ -32,6 +32,7 @@ export default function Features() {
                         </TiltCard>
                     </div>
                 </Section>
+                <Section />
                 
             </>
     );
