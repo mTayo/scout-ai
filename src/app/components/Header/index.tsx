@@ -20,7 +20,7 @@ export default function Header() {
                                             priority
                                         />
                                     </div>
-                                    <ul className="flex gap-x-6 text-[#CBD5E1] text-[15px]">
+                                    <ul className="flex gap-x-6 text-[#CBD5E1] text-[15px] hidden lg:block">
                                         <li className="p-1 pr-[16.82px] text-slate-300">Features</li>
                                         <li className="p-1 pr-[22.22px] text-slate-300">Pricing</li>
                                         <li className="p-1 pr-[5.41px] text-slate-300">Docs</li>
@@ -54,8 +54,8 @@ export default function Header() {
                                 </span>
                             </div>
                             <div className="mt-6">
-                                <h2 className="hero-heading leading-[5.5rem]">AI for teams building <span className="block">what's next.</span></h2>
-                                <p className="mt-8 hero-paragraph text-lg">Scout gives you the tools to build custom agents and <span className="block">workflows in record time.</span></p>
+                                <h2 className="hero-heading leading-[4.2rem] md:leading-[5.5rem]">AI for teams building <span className="block">what's next.</span></h2>
+                                <p className="mt-8 hero-paragraph text-base md:text-lg">Scout gives you the tools to build custom agents and <span className="block">workflows in record time.</span></p>
                             </div>
                             <div className="flex items-center justify-center mt-10">
                                 <Button 

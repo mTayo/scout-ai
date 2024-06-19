@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Button from "../common/Button";
 import PlanCard from "../common/PlanCard";
 import Section from "../common/Section";
 import TiltCard from "../common/TiltingCard";
@@ -20,14 +21,14 @@ export default function SubPlan() {
                         
                     </div>
                     {/* DEDICATED SUPPORT */}
-                    <div className="dedicated-support-container pl-[14px] py-2.5 max-w-[960px] mx-auto flex mb-[142px]">
+                    <div className="dedicated-support-container pl-[14px] rounded-[16px] max-w-[960px] mx-auto flex mb-[142px]">
                         <div className="dedicated-support py-6 pl-5 flex-grow font-normal">
                             <h2 className="text-2xl text-white">Dedicated Support</h2>
                             <p className="text-white opacity-50 mt-3.5 ">We are here to help get you started with a dedicated support engineer who can assist with 
                                 scoping your first models and getting them deployed.
                             </p>
                             <h3 className="mt-5 text-white opacity-50 font-medium text-[13px]">WHAT'S INCLUDED</h3>
-                            <div className="flex flex-wrap">
+                            <div className="flex flex-wrap mt-5">
                                 {includedFeatures.map((item:string, _i:number) => (
                                     <div key={_i} className="flex items-center gap-x-4 pr-[80px]">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
@@ -38,8 +39,20 @@ export default function SubPlan() {
                                 ))}
                             </div>
                         </div>
-                        <div className="max-w-[307px] w-full">
-
+                        <div className="max-w-[307px] w-full add-on-container rounded-r-[16px]">
+                                <div className="mx-4 my-4 add-on-card rounded-xl">
+                                    <div className="px-4 py-7">
+                                       <div className="flex justify-center "> 
+                                            <img src="/assets/plans/add_on.svg" alt="Add on"/>
+                                        </div>
+                                        <div className="text-white">
+                                            <h3 className="text-center text-4xl mt-2.5">$750</h3>
+                                            <p className="text-center mt-0 text-base">monthly</p>
+                                            <Button text="Request Access" animateClass="w-full" className="w-full text-center py-[9px] text-sm pro-plan-btn text-[#09090A] mt-5" />
+                                            <p className="opacity-50 text-xs mt-4">No long term contract obligation.</p>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </Section>

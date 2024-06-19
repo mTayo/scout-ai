@@ -249,12 +249,19 @@ body {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
 }
 .dedicated-support-container{
-  border-radius: 16px;
+
   border: 2px solid rgba(255, 255, 255, 0.02);
   background: radial-gradient(70.71% 70.71% at 50% 50%, rgba(27, 27, 27, 0.00) 0%, #1B1B1B 49.48%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.30);
 }
 .dedicated-support{
   border-radius: 16px 0px 0px 16px;
+  border: 2px solid rgba(37, 37, 39, 0.20);
+}
+.add-on-container{
+  background: radial-gradient(70.71% 70.71% at 50% 50%, rgba(155, 126, 238, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(0deg, rgba(12, 10, 11, 0.50) 0%, rgba(12, 10, 11, 0.50) 100%), radial-gradient(70.71% 70.71% at 50% 50%, rgba(27, 27, 27, 0.00) 0%, rgba(27, 27, 27, 0.80) 100%);
+}
+.add-on-card{
+  /* border-radius: 0px 12px 12px 0px; */
   border: 2px solid rgba(37, 37, 39, 0.20);
 }
