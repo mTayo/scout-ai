@@ -10,22 +10,22 @@ export default function Customers() {
             <>
                 <Section useContentBorder={false} useTopHorizontalBorder={false}/>
                 <Section contentClass="" useTopHorizontalBorder={false}>
-                    <div className="mx-[120px]  vertical-border-right flex justify-between items-center">
+                    <div className="lg:mx-[120px]  vertical-border-right flex justify-between items-center">
                         {customerData.first_row.map((item, i) => (
-                            <div className={`py-10 px-12 ${i  < customerData.first_row.length? 'vertical-border-left' : ''}`} key={i}>
-                                <img src={item} alt={item} />
+                            <div className={`md:py-10 md:px-12 px-2 py-4 ${i  < customerData.first_row.length? 'vertical-border-left' : ''}`} key={i}>
+                                <img src={item} alt={item} className="w-full" />
                             </div>
                         ))}
                     </div>
                 </Section>
-                <Section contentClass="py-[65px]" useContentBorder={false} useTopHorizontalBorder={false}>
-                    <h2 className="text-white text-4xl text-center leading-[3.4rem] font-medium">Used by teams at Statsig, Deno, <span className="block">Dagster, Evidence and more.</span></h2>
+                <Section contentClass="py-6 lg:py-[65px]" useContentBorder={false} useTopHorizontalBorder={false}>
+                    <h2 className="text-white text-2xl lg:text-4xl text-center leading-[3rem] lg:leading-[3.4rem] font-medium">Used by teams at Statsig, Deno, <span className="block">Dagster, Evidence and more.</span></h2>
                 </Section>
                 <Section contentClass="" useTopHorizontalBorder={false}>
-                    <div className="mx-[120px]   vertical-border-right flex justify-between items-center">
+                    <div className="lg:mx-[120px]   vertical-border-right flex justify-between items-center">
                         {customerData.second_row.map((item, i) => (
-                            <div className={`py-10 px-12 ${i  < customerData.first_row.length? 'vertical-border-left' : ''}`} key={i}>
-                                <img src={item} alt={item} />
+                            <div className={`md:py-10 md:px-12 px-2 py-4 ${i  < customerData.first_row.length? 'vertical-border-left' : ''}`} key={i}>
+                                <img src={item} alt={item} className="w-full"  />
                             </div>
                         ))}
                     </div>

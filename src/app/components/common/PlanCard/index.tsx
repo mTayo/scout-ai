@@ -4,13 +4,13 @@ export default function PlanCard({cardDetails}: any) {
     const {type, value, imgSrc, text, btnText, featureListing} = cardDetails;
     const renderHeader = () => {};
     return (
-          <div className={`relative max-w-[303px]  self-stretch self-auto w-full plan-card pt-[33px] px-[25px] pb-[37px] plan-card-${type}`}>
+          <div className={`relative md:max-w-[303px]  self-stretch self-auto w-full plan-card pt-[33px] px-[25px] pb-[37px] plan-card-${type}`}>
               <div>
                  <img src={imgSrc} alt={type} />
               </div>
               <div className="mt-[19px]">
                 <span className="text-3xl text-white font-medium">{value}</span>
-                <p className="font-normal text-white mt-4 max-w-[179px] opacity-50">
+                <p className="font-normal text-white mt-4 md:max-w-[179px] opacity-50">
                     {text}
                 </p>
                 <div className="mt-[23px] flex justify-center font-normal">

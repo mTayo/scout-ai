@@ -55,18 +55,20 @@ const TiltCard = ({children}: any) => {
             transformStyle: "preserve-3d",
             transform,
         }} 
+        className=" w-full"
     >
         <div
             style={{
             transform: "translateZ(75px)",
             transformStyle: "preserve-3d",
             }}
+            className=" w-full"
         >
             <div
                 style={{
                     transform: "translateZ(50px)",
                 }}
-                className="pointer"
+                className="pointer w-full"
             >
                 {children}
             </div>

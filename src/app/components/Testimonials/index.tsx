@@ -26,11 +26,11 @@ export default function Testimonials() {
     return (
             <>
                 <Section contentClass="" useContentBorder={false} useContentMaxWidth={false} useTopHorizontalBorder={false}>
-                    <div className="flex w-full">
-                        <div className="w-[222px]">
+                    <div className="flex flex-col md:flex-row w-full">
+                        <div className="md:w-[222px] w-full flex md:block">
                             {spliceArray().map((item, _i: number) => (
-                                <div key={_i} className={`flex ${_i+1 < spliceArray().length? 'horizontal-border-bottom': ''} `} >
-                                    <div className="w-[80px] vertical-border-right" />
+                                <div key={_i} className={`flex w-full md:w-auto ${_i+1 < spliceArray().length? 'horizontal-border-bottom': ''} `} >
+                                    <div className="hidden md:block md:w-[80px] vertical-border-right" />
                                     <AnimateElement className={`z-10   pointer w-full flex-grow ${currentId === item?.id? 'light-grey-bg': ''}`}>
                                         <div className="h-[141.83px] w-full flex justify-center items-center " onClick={()=>changeActiveId(item.id)}>
                                             <img src={item.icon} alt={item?.text} />
@@ -40,25 +40,25 @@ export default function Testimonials() {
                                 </div>
                             ))}
                         </div>
-                        <div className="text-white flex-grow vertical-border-left vertical-border-right">
+                        <div className="text-white flex-grow vertical-border-left vertical-border-right md:px-0 px-2">
                             <div className="max-w-[470px] mx-auto w-full py-[27.97px]">
                                 <p className="text-center text-3xl mt-6 font-normal">{testimonialsArray[currentId].text}</p>
-                                <div className="flex justify-center mt-10">
+                                <div className="flex w-[20%] justify-center mt-10">
                                     <TiltCard>
                                         <img src={testimonialsArray[currentId].avatar} alt="testimonial image" className="h-20 w-20 object-cover rounded-full  ring-white" />
                                     </TiltCard>
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[222px]">
+                        <div className="md:w-[222px]  w-full flex md:block">
                             {spliceArray(false).map((item, _j: number) => (
-                                <div key={_j} className={`flex ${_j+1 < spliceArray().length? 'horizontal-border-bottom': ''} `} >
+                                <div key={_j} className={`flex w-full md:w-auto ${_j+1 < spliceArray().length? 'horizontal-border-bottom': ''} `} >
                                     <AnimateElement className={`z-10  pointer w-full flex-grow ${currentId === item?.id? 'light-grey-bg': ''}`}>
                                         <div className="h-[141.83px] w-full flex justify-center items-center " onClick={()=>changeActiveId(item.id)}>
                                             <img src={item.icon} alt={item?.text} />
                                         </div>
                                     </AnimateElement>
-                                <div className="w-[80px] vertical-border-left" />
+                                <div className=" hidden md:block md:w-[80px]  vertical-border-left" />
                                 </div>
                             ))}
                         </div>

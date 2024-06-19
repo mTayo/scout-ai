@@ -10,11 +10,11 @@ export default function SubPlan() {
     return (
             <div>
                 <Section contentClass="" useContentBorder={false} useTopHorizontalBorder={false}>
-                    <div className="text-center mt-[119px]">
-                        <h2 className="text-white text-4xl font-bold">A plan for every need.</h2>
-                        <p className="paragraph-color mt-4 text-lg font-normal">Whether you are just starting or require massive scale, we have a solution.</p>
+                    <div className="text-center mt-8 md:mt-[119px]">
+                        <h2 className="text-white text-4xl font-bold md:px-0 px-2">A plan for every need.</h2>
+                        <p className="paragraph-color mt-4 text-lg font-normal md:px-0 px-2">Whether you are just starting or require massive scale, we have a solution.</p>
                     </div>
-                    <div className="mt-10 mb-5 flex gap-x-6 justify-center">
+                    <div className="mt-10 mb-5 flex gap-x-6 gap-y-6 px-4 md:px-0 flex-wrap justify-center">
                         {cardData.map((card: any, _i: number) => (
                             <PlanCard key={_i} cardDetails={card} />
                         ))}
