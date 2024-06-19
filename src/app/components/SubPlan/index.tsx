@@ -22,7 +22,7 @@ export default function SubPlan() {
                     </div>
                     {/* DEDICATED SUPPORT */}
                     <div className="md:px-0 px-4">
-                        <div className="dedicated-support-container md:pl-[14px]  rounded-[16px] max-w-[960px] mx-auto flex flex-wrap mb-[142px]">
+                        <div className="dedicated-support-container md:pl-[14px]  rounded-[16px] max-w-[960px] mx-auto flex md:flex-nowrap flex-wrap mb-[142px]">
                             <div className="dedicated-support py-6 pl-5 flex-grow font-normal">
                                 <h2 className="text-2xl text-white">Dedicated Support</h2>
                                 <p className="text-white opacity-50 mt-3.5 ">We are here to help get you started with a dedicated support engineer who can assist with 
