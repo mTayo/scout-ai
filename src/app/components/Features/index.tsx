@@ -8,7 +8,7 @@ export default function Features() {
             <>
           
                 <Section contentClass="" useContentBorder={false} useTopHorizontalBorder={false}>
-                    <div className="features-section-container relative">
+                    <div className="features-section-container relative overflow-x-hidden">
                         <div className="pt-6 lg:pt-[121px] flex flex-wrap justify-center lg:justify-between items-center">
                             <div className="w-full md:w-auto hidden lg:block">
                                 <TiltCard>
