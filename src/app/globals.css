@@ -270,7 +270,7 @@ body {
 
 /* Responsiveness */
 @media (max-width:1200px){
-  .header-container::before, .header-container::after{
+  .header-container::before, .header-container::after, .features-section-container::before{
     content: " ";
   }
 }
