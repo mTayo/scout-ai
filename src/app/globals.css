@@ -152,7 +152,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 64px;
+  /* font-size: 64px; */
   font-style: normal;
   font-weight: 500;
   /* line-height: 62.72px; 98% */
@@ -270,7 +270,10 @@ body {
 
 /* Responsiveness */
 @media (max-width:1200px){
-  .header-container::before, .header-container::after, .features-section-container::before{
+  .header-container::before, 
+  .header-container::after, 
+  .features-section-container::before, 
+  .hero-section::after{
     content: " ";
   }
 }

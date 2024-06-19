@@ -1,5 +1,5 @@
 
-export default function Section({children, contentClass="py-12", useContentBorder= true, useContentMaxWidth=true, useTopHorizontalBorder= true}: any) {
+export default function Section({children, contentClass="py-5 md:py-12", useContentBorder= true, useContentMaxWidth=true, useTopHorizontalBorder= true}: any) {
     return (
           <div className="relative">
               <div className={`horizontal-border ${useTopHorizontalBorder? '': 'horizontal-border-top-zero'}`}>

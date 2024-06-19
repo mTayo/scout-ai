@@ -38,8 +38,8 @@ export default function Header() {
             </div>
 
                 <div className="container-max-width mx-auto relative ">
-                    <div className="hero-section relative text-center content-max-width mx-auto overflow-x-hidden ">
-                        <div className="content-border relative flex justify-center flex-col pb-[96px]">
+                    <div className="hero-section relative text-center content-max-width mx-auto lg:overflow-x-hidden ">
+                        <div className="content-border relative flex justify-center flex-col pb-10 md:pb-[96px]">
                             <div className="flex items-center justify-center mt-[92px] hero-beta py-2 max-w-[236.83px] mx-auto w-full">
                                 <Image
                                     src="/assets/hero/hero_btn_icon.svg"
@@ -54,8 +54,8 @@ export default function Header() {
                                 </span>
                             </div>
                             <div className="mt-6">
-                                <h2 className="hero-heading leading-[4.2rem] md:leading-[5.5rem]">AI for teams building <span className="block">what's next.</span></h2>
-                                <p className="mt-8 hero-paragraph text-base md:text-lg">Scout gives you the tools to build custom agents and <span className="block">workflows in record time.</span></p>
+                                <h2 className="hero-heading leading-[4.2rem] md:leading-[5.5rem] text-[50px] md:text-[64px]">AI for teams building <span className="lg:block">what's next.</span></h2>
+                                <p className="mt-8 hero-paragraph text-base md:text-lg">Scout gives you the tools to build custom agents and <span className="lg:block">workflows in record time.</span></p>
                             </div>
                             <div className="flex items-center justify-center mt-10">
                                 <Button 
@@ -73,7 +73,7 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="horizontal-border">
+                <div className="horizontal-border hidden md:block">
                 <div className="container-max-width mx-auto relative">
                     <div className=" content-max-width mx-auto overflow-x-hidden">
                     <div className="content-border">
