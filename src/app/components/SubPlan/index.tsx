@@ -21,38 +21,40 @@ export default function SubPlan() {
                         
                     </div>
                     {/* DEDICATED SUPPORT */}
-                    <div className="dedicated-support-container pl-[14px] rounded-[16px] max-w-[960px] mx-auto flex mb-[142px]">
-                        <div className="dedicated-support py-6 pl-5 flex-grow font-normal">
-                            <h2 className="text-2xl text-white">Dedicated Support</h2>
-                            <p className="text-white opacity-50 mt-3.5 ">We are here to help get you started with a dedicated support engineer who can assist with 
-                                scoping your first models and getting them deployed.
-                            </p>
-                            <h3 className="mt-5 text-white opacity-50 font-medium text-[13px]">WHAT'S INCLUDED</h3>
-                            <div className="flex flex-wrap mt-5">
-                                {includedFeatures.map((item:string, _i:number) => (
-                                    <div key={_i} className="flex items-center gap-x-4 pr-[80px]">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                                            <path d="M15.5 10.0928L11 15.3309L9 13.4261M21.5 12.4738C21.5 17.2076 17.4705 21.0452 12.5 21.0452C7.52943 21.0452 3.5 17.2076 3.5 12.4738C3.5 7.73991 7.52943 3.90234 12.5 3.90234C17.4705 3.90234 21.5 7.73991 21.5 12.4738Z" stroke="#434343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <p className="text-white opacity-50 max-w-[160px]">{item}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                        <div className="max-w-[307px] w-full add-on-container rounded-r-[16px]">
-                                <div className="mx-4 my-4 add-on-card rounded-xl">
-                                    <div className="px-4 py-7">
-                                       <div className="flex justify-center "> 
-                                            <img src="/assets/plans/add_on.svg" alt="Add on"/>
+                    <div className="md:px-0 px-4">
+                        <div className="dedicated-support-container md:pl-[14px]  rounded-[16px] max-w-[960px] mx-auto flex flex-wrap mb-[142px]">
+                            <div className="dedicated-support py-6 pl-5 flex-grow font-normal">
+                                <h2 className="text-2xl text-white">Dedicated Support</h2>
+                                <p className="text-white opacity-50 mt-3.5 ">We are here to help get you started with a dedicated support engineer who can assist with 
+                                    scoping your first models and getting them deployed.
+                                </p>
+                                <h3 className="mt-5 text-white opacity-50 font-medium text-[13px]">WHAT'S INCLUDED</h3>
+                                <div className="flex flex-wrap mt-5">
+                                    {includedFeatures.map((item:string, _i:number) => (
+                                        <div key={_i} className="flex items-center gap-x-4 lg:pr-[80px]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                                <path d="M15.5 10.0928L11 15.3309L9 13.4261M21.5 12.4738C21.5 17.2076 17.4705 21.0452 12.5 21.0452C7.52943 21.0452 3.5 17.2076 3.5 12.4738C3.5 7.73991 7.52943 3.90234 12.5 3.90234C17.4705 3.90234 21.5 7.73991 21.5 12.4738Z" stroke="#434343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <p className="text-white opacity-50 lg:max-w-[160px]">{item}</p>
                                         </div>
-                                        <div className="text-white">
-                                            <h3 className="text-center text-4xl mt-2.5">$750</h3>
-                                            <p className="text-center mt-0 text-base">monthly</p>
-                                            <Button text="Request Access" animateClass="w-full" className="w-full text-center py-[9px] text-sm pro-plan-btn text-[#09090A] mt-5" />
-                                            <p className="opacity-50 text-xs mt-4">No long term contract obligation.</p>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
+                            </div>
+                            <div className="md:max-w-[307px] mt-4 md:mt-0 w-full add-on-container rounded-r-[16px]">
+                                    <div className="mx-4 my-4 add-on-card rounded-xl">
+                                        <div className="px-4 py-7">
+                                        <div className="flex justify-center "> 
+                                                <img src="/assets/plans/add_on.svg" alt="Add on"/>
+                                            </div>
+                                            <div className="text-white">
+                                                <h3 className="text-center text-4xl mt-2.5">$750</h3>
+                                                <p className="text-center mt-0 text-base">monthly</p>
+                                                <Button text="Request Access" animateClass="w-full" className="w-full text-center py-[9px] text-sm pro-plan-btn text-[#09090A] mt-5" />
+                                                <p className="opacity-50 text-xs mt-4">No long term contract obligation.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </Section>
