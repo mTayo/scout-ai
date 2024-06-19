@@ -20,7 +20,7 @@ export default function Header() {
                                             priority
                                         />
                                     </div>
-                                    <ul className="flex gap-x-6 text-[#CBD5E1] text-[15px] hidden lg:block">
+                                    <ul className=" gap-x-6 text-[#CBD5E1] text-[15px] hidden lg:flex">
                                         <li className="p-1 pr-[16.82px] text-slate-300">Features</li>
                                         <li className="p-1 pr-[22.22px] text-slate-300">Pricing</li>
                                         <li className="p-1 pr-[5.41px] text-slate-300">Docs</li>
