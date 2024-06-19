@@ -40,7 +40,7 @@ export default function SubPlan() {
                                     ))}
                                 </div>
                             </div>
-                            <div className="md:max-w-[307px] mt-4 md:mt-0 w-full add-on-container rounded-r-[16px]">
+                            <div className="md:max-w-[307px] mt-4 md:mt-0 w-full add-on-container md:rounded-r-[16px]">
                                     <div className="mx-4 my-4 add-on-card rounded-xl">
                                         <div className="px-4 py-7">
                                         <div className="flex justify-center "> 

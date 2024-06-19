@@ -43,7 +43,7 @@ export default function Testimonials() {
                         <div className="text-white flex-grow vertical-border-left vertical-border-right md:px-0 px-2">
                             <div className="max-w-[470px] mx-auto w-full py-[27.97px]">
                                 <p className="text-center text-3xl mt-6 font-normal">{testimonialsArray[currentId].text}</p>
-                                <div className="flex w-[20%] justify-center mt-10">
+                                <div className="flex w-[20%] mx-auto justify-center mt-10">
                                     <TiltCard>
                                         <img src={testimonialsArray[currentId].avatar} alt="testimonial image" className="h-20 w-20 object-cover rounded-full  ring-white" />
                                     </TiltCard>
