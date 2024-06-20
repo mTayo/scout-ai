@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import Button from "../common/Button";
+import { BackgroundCircles } from "../common/PlanetCircles";
 export default function Header() {
   return (
         <div className="header-container relative">
@@ -53,6 +54,9 @@ export default function Header() {
                                     <img src="/assets/chevron-right.svg" alt="Chevron right" />
                                 </span>
                             </div>
+                            <div className="relative -z-10 hidden lg:block">
+                                <BackgroundCircles />
+                            </div>
                             <div className="mt-6">
                                 <h2 className="hero-heading leading-[4.2rem] md:leading-[5.5rem] text-[50px] md:text-[64px]">AI for teams building <span className="lg:block">what's next.</span></h2>
                                 <p className="mt-8 hero-paragraph text-base md:text-lg">Scout gives you the tools to build custom agents and <span className="lg:block">workflows in record time.</span></p>
@@ -69,9 +73,10 @@ export default function Header() {
                                     animateClass="z-10"
                                 />
                             </div>
-                            
                         </div>
+                        
                     </div>
+                    
                 </div>
                 <div className="horizontal-border hidden md:block">
                 <div className="container-max-width mx-auto relative">
@@ -82,7 +87,6 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-
         </div>
   );
 }
