@@ -45,7 +45,7 @@ export const BackgroundCircles = ({ parallaxRef }: any) => {
           />
         </div>
 
-        <div className="absolute bottom-1/2 right-1/3 w-0.25 h-1/2 origin-bottom -rotate-[56deg]">
+        <div className="absolute bottom-1/4 right-1/3 w-0.25 h-1/2 origin-bottom -rotate-[56deg]">
           <div
             className={`w-4 h-4 -ml-1 -mt-32 bg-gradient-to-b from-[#5a5c6a] to-[#202d3a] rounded-full transition-transform duration-500 ease-out ${
               mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
@@ -77,7 +77,7 @@ export const BackgroundCircles = ({ parallaxRef }: any) => {
           />
         </div>
 
-        <div className="absolute bottom-1/2 right-1/4 w-0.25 h-1/2 origin-bottom rotate-[70deg]">
+        <div className="absolute bottom-1/4 right-1/4 w-0.25 h-1/2 origin-bottom rotate-[70deg]">
           <div
             className={`w-6 h-6 -ml-3 -mt-3 bg-gradient-to-b from-[#5a5c6a] to-[#202d3a] rounded-full transition-transform duration-500 ease-out ${
               mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
